@@ -1,0 +1,5 @@
+last_steps="$HOME/last_steps.sh"
+if [ -f "$last_steps" ]; then
+    source "$last_steps"
+    rm "$last_steps"
+fi
