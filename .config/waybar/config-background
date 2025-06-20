@@ -92,14 +92,14 @@
   "custom/swap": {
     "on-click": "~/.config/waybar/scripts/swap.sh",
     "tooltip": "Swap between waybar configs",
-    "format": "Bg  "
+    "format": "Bg  "
   },
   "custom/mpd": {
     "format": " {title} - {artist}",
     "interval": 5,
     "exec": "mpc current --format='\"title\":\"%title%\",\"artist\":\"%artist%\"'"
-  }, 
-  "sway/mode": {
+  },
+    "sway/mode": {
     "format": "<span style=\"italic\">{}</span>"
   },
   "sway/window": {
@@ -113,7 +113,7 @@
     }
   },
   "tray": {
-    "icon-size": 14,
+    "icon-size": 18,
     "spacing": 5
   },
   "clock": {
@@ -141,7 +141,7 @@
     },
     "format": "  {:%a %d %b  %I:%M %p}", //12 hour format
     // "format": " {:%d %m %Y  %H:%M}",	//24 hour format
-    "format-alt": "  {:%d/%m/%Y  %H:%M:%S}",
+    "format-alt": "  {:%d/%m/%Y  %H:%M}",
     // //"max-length": 200
     "interval": 1
   },
@@ -173,14 +173,14 @@
   //     "interval": 1
   // },
   "cpu": {
-    "format": " {usage: 1}%",
+    "format": " {}%",
     "on-click": "foot -e btop"
   },
   "memory": {
-    "format": " {: >1}%",
+    "format": " {}%",
     "on-click": "foot -e btop"
   },
- "temperature": {
+  "temperature": {
         //"tooltip":false,
         //"thermal-zone": 2,
         //"hwmon-path": "/sys/class/hwmon/hwmon1/temp1_input",
@@ -191,9 +191,9 @@
     },
   "backlight": {
     // "device": "acpi_video1",
-    "format": "{icon} {percent: >3}%",
+    "format": "{icon} {percent: >1}%",
     "format-icons": ["", ""],
-    "on-scroll-down": "brightnessctl -c backlight set 5%-",
+     "on-scroll-down": "brightnessctl -c backlight set 5%-",
     //"on-scroll-down": "light -A 5",
     "on-scroll-up": "brightnessctl -c backlight set +5%"
     //"on-scroll-up": "light -U 5"
@@ -222,7 +222,7 @@
   },
   "pulseaudio": {
     "scroll-step": 1,
-    "format": "{icon} {volume: >3}%",
+    "format": "{icon} {volume: >1}%",
     "format-bluetooth": "{icon} {volume: >3}%",
     "format-muted": " muted",
     "format-icons": {
@@ -238,9 +238,9 @@
     "on-scroll-up": "pamixer -ui 2",
     "on-scroll-down": "pamixer -ud 2"
   }, 
- "custom/power": {
+  "custom/power": {
     "format": " ⏻ ",
-    "on-click": "~/.config/sway/scripts/powermenu",
+    "on-click": "~/.config/sway/scripts/rofi_powermenu",
     "tooltip": false
   }, 
   "custom/launcher": {
