@@ -1,5 +1,8 @@
 # Sway-WM Dotfiles
 
+## Attribution
+This is a fork of [hidayry](https://codeberg.org/hidayry)'s project at [Codeberg](https://codeberg.org/hidayry/swaywm-dotfiles). The great work and configurations from 322ef3f and before are accredited to hidayry.
+
 ## 🔥 Information
 
 |    Distro    |            [Archlinux](https://archlinux.org/)-[Debian 12](https://debian.org/)             |
